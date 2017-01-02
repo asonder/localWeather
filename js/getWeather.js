@@ -75,13 +75,13 @@ $(document).ready(function loadWeather() {
 			timeFormat();
 
 		}).fail(function() {
-			var msg = '<p class="has-text-centered" style="font-size:.25em;">' + 'Sorry. Current temperature could not be found.' + '</p>';
+			var msg = '<span style="font-size:.25em;">' + 'Sorry. Current temperature could not be found.' + '</span>';
 			$('p#current_temp').html(msg);
 
 		});
 
 	}).fail(function() {
-		var msg = '<p class="has-text-centered" id="current_temp" style="font- size:.25em;">' + 'Sorry. Location could not be found.' + '</p>';
+		var msg = '<span style="font- size:.25em;">' + 'Sorry. Location could not be found.' + '</span>';
 		$('p#current_temp').html(msg);
 
 	});
