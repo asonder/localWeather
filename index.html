@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Show the local weather">
+    <title>Show the Local Weather</title>
+    <!-- CSS framework-->
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/bulma">
+		<!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Javascript library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<section class="hero is-fullheight notification ">
+		<div class="hero-body">
+			<div class="container">
+				<div class="columns is-vcentered">
+					<div class="column is-8 is-offset-2">
+						<h1 class="title is-1" id="today_date">
+            </h1>
+						<h2 class="subtitle is-2" id="current_loc"></h2>
+						<h2 class="subtitle is-3" id="time"></h2>
+						<div class="box" id="temp_box">
+							<div class="columns is-vcentered">
+								<div class="column is-12">
+									<div id="temp_div">
+										<p class="has-text-centered" id="current_temp">
+										</p>
+										<p class="has-text-centered" id="current_climacon"><i id="climacon"></i>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="has-text-centered">
+							<label class="switch">
+  							   <input type="checkbox" id="units" data-next="c">
+  								 <div class="slider round"></div>
+								</label>
+						</div>
+						<p class="has-text-centered">
+							F&deg; | C&deg;
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
