@@ -66,11 +66,11 @@ input:checked + .slider:before {
 	height: 375px;
 }
 
-.current_temp {
+#current_temp {
 	font-size: 9em;
 }
 
-.sorry {
+#sorry {
 	font-size: 2em;
 }
 
