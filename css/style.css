@@ -66,8 +66,12 @@ input:checked + .slider:before {
 	height: 375px;
 }
 
-#current_temp {
+.current_temp {
 	font-size: 9em;
+}
+
+.sorry {
+	font-size: 2em;
 }
 
 #current_climacon {
