@@ -1,7 +1,7 @@
 $(document).ready(function loadWeather() {
 
-	var getLoc = 'https://ipinfo.io';
-	var getWeather = 'https://api.openweathermap.org/data/2.5/weather?units=imperial&';
+	var getLoc = 'http://ipinfo.io';
+	var getWeather = 'http://api.openweathermap.org/data/2.5/weather?units=imperial&';
 
 	//Get location coords via IP address
 	$.getJSON(getLoc).done(function(location) {
