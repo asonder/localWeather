@@ -76,13 +76,14 @@ $(document).ready(function loadWeather() {
 
 		}).fail(function() {
 			var msg = 'Sorry. Current temperature could not be found.';
-			$('p#current_temp').toggleClass('has-text-centered sorry').text(msg);
+			$('p#current_temp').hide();
+			$('p#sorry').show().text(msg);
 
 		});
 
 	}).fail(function() {
 		var msg = 'Sorry. Location could not be found.';
-			$('p#current_temp').toggleClass('has-text-centered sorry').text(msg);
-
+			$('p#current_temp').hide();
+			$('p#sorry').show().text(msg);
 	});
 });
