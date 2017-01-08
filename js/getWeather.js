@@ -1,8 +1,8 @@
 $(document).ready(function loadWeather() {
 	$('p#sorry').hide();
 	
-	var getLoc = 'https://cors-everywhere.herokuapp.com/http://ipinfo.io';
-	var getWeather = 'https://cors-everywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?units=imperial&';
+	var getLoc = 'https://ipinfo.io';
+	var getWeather = 'https://api.openweathermap.org/data/2.5/weather?units=imperial&';
 
 	//Get location coords via IP address
 	$.getJSON(getLoc).done(function(location) {
